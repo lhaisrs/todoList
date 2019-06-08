@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HomePage } from './home.page';
+import { AddPage } from './add.page';
 
 //Firebase
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -13,7 +13,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage
+    component: AddPage
   }
 ];
 
@@ -25,6 +25,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     AngularFirestoreModule
   ],
-  declarations: [HomePage]
+  declarations: [AddPage]
 })
-export class HomePageModule {}
+export class AddPageModule {}

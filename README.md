@@ -66,13 +66,19 @@ Você pode ver com calma mais informações sobre a instalação do Ionic [aqui]
 
 ###### Criando as variáveis de ambiente do Firebase
 
+###### Inicializando o módulo do Firebase
+
 #### Habilitando o login via email no Firebase
+
+###### Criando uma conta no console do Firebase
 
 ## Criando o login
 
 #### Criando uma nova página para realizar o login
 
 ###### Configurando login.page.html
+
+###### Importando o FirebaseAuth no login.module.ts
 
 ###### Configurando login.page.ts: Conexão com FirebaseAuth
 
@@ -90,9 +96,7 @@ Você pode ver com calma mais informações sobre a instalação do Ionic [aqui]
 
 #### Configurando home.page.html: Adicionando o botão de adicionar atividades
 
-#### Configurando home.page.ts: Navegar para adicionar atividades
-
-#### Atualizando as rotas do aplicativo
+#### Atualizando as rotas do aplicativo: Navegando login para home
 
 ## Adicionando atividades
 
@@ -100,13 +104,25 @@ Você pode ver com calma mais informações sobre a instalação do Ionic [aqui]
 
 #### Configurando add.page.html
 
+###### Importando o FirebaseFirestore no add.module.ts
+
 #### Configurando add.page.ts: Conexão com FirebaseFirestore
 
 #### Criando o método de criação das atividades
 
+#### Configurando home.page.ts: Navegar para adicionar atividades
+
+#### Voltando para home após adicionar atividade
+
 ## Lendo as atividades
 
+###### Importando o FirebaseFirestore no home.module.ts
+
+#### Configurando home.page.ts: Conexão com FirebaseFirestore
+
 #### Criando o método de leitura das atividades em home.page.ts
+
+#### Mostrando a lista de atividades
 
 ## Boas práticas com Firebase: Observables
 
