@@ -134,6 +134,6 @@ Você pode ver com calma mais informações sobre a instalação do Ionic [aqui]
 
 #### Adicionando o @angular/pwa
 
-## Realizando o deploy da aplicação
+## Realizando o deploy da aplicação para o Firebase
 
 ## Bônus: Avaliando o seu aplicativo PWA

@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 //Firebase
 import { firebaseConfig } from '../environment.firebase'; //firebase variables
 import { AngularFireModule } from '@angular/fire';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +22,8 @@ import { AngularFireModule } from '@angular/fire';
     BrowserModule,
     IonicModule.forRoot(),
     AngularFireModule.initializeApp(firebaseConfig),
-    AppRoutingModule
+    AppRoutingModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     StatusBar,
